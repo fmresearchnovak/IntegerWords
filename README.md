@@ -50,9 +50,10 @@ def main():
 ## Details
 * Negative numbers are not yet supported.
 * Integers only.
+* Maximum supported value is 999 quintillion (999,999,999,999,999,999,999)
 * This program never outputs the word "and."  For example, when inputting 3001 the output is "three thousand one" not "three thousand and one"  This is acceptable grammar in the United States, but it may seem a bit odd in some cases.  For example, when inputting 3000001 the output is "three million one."  This may seem more awkward then the more colloquial "three million and one", but it is the intended output.
 * For documentation about the API consider reading the source code in `IntegerWords.py`
-* Inputs with commas or other delimiters are currently not supported (e.g., "331,002,651").
+* Inputs with delimiters other than commas are currently not supported (e.g., "331.002.651").
 
 ## Pull Requests
 Don't like something?  Make a pull request.  This is a very simple project and should be accessible to even beginner programmers.

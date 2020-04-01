@@ -101,7 +101,13 @@ def debug_tests():
 
 if __name__ == "__main__":
 	#debug_tests()
-	num = int(sys.argv[1])
+	if(len(sys.argv) != 2):
+		print("Improper Usage")
+		sys.exit(1)
+
+	user_input = sys.argv[1]
+	user_input = user_input.replace(",", "")
+	num = int(user_input)
 	print(EnglishInteger(num))
 
 
