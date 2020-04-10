@@ -14,7 +14,7 @@ class EnglishInteger:
 		self.translation_tens = ["error", "error", "twenty", "thirty", "fourty", "fifty",
 		"sixty", "seventy", "eighty", "ninety"]
 
-		self.big_translation = ["", "thousand", "million", "billion", "trillion", "quadrillion", "quintillion"]
+		self.big_translation = ["", "thousand", "million", "billion", "trillion", "quadrillion", "quintillion", "sextillion", "septillion", "octillion", "nonillion", "decillion"]
 
 
 	def setValue(self, newValue):

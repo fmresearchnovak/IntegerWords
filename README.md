@@ -19,7 +19,7 @@ user@machine$ sudo cp IntegerWords.py /usr/local/bin/intw
 user@machine$ sudo chmod +x /usr/local/bin/intw
 ```
 
-Making casual use easy and convenient.
+Installation makes casual use easy and convenient for example:
 
 ```
 user@machine$ intw 331002651
@@ -41,7 +41,7 @@ import IntegerWords
 
 def main():
 	num = 331002651
-	print(EnglishInteger(num))
+	print(IntegerWords.EnglishInteger(num))
 ```
 
 
@@ -50,7 +50,7 @@ def main():
 ## Details
 * Negative numbers are not yet supported.
 * Integers only.
-* Maximum supported value is 999 quintillion (999,999,999,999,999,999,999)
+* Maximum supported value is 999 decillion followed by subsequent 9's (i.e., 999,999,999,999,999,999,999,999,999,999,999,999)
 * This program never outputs the word "and."  For example, when inputting 3001 the output is "three thousand one" not "three thousand and one"  This is acceptable grammar in the United States, but it may seem a bit odd in some cases.  For example, when inputting 3000001 the output is "three million one."  This may seem more awkward then the more colloquial "three million and one", but it is the intended output.
 * For documentation about the API consider reading the source code in `IntegerWords.py`
 * Inputs with delimiters other than commas are currently not supported (e.g., "331.002.651").
