@@ -3,6 +3,11 @@
 import random
 import sys
 
+
+def intw(num):
+    print(EnglishInteger(num))
+
+
 class EnglishInteger:
 
 	def __init__(self, newVal=0):
@@ -108,6 +113,6 @@ if __name__ == "__main__":
 	user_input = sys.argv[1]
 	user_input = user_input.replace(",", "")
 	num = int(user_input)
-	print(EnglishInteger(num))
+	intw(num)
 
 

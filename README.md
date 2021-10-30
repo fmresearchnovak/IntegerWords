@@ -9,9 +9,9 @@ user@machine$ python3 IntegerWords.py 331002651
 three hundred thirty one million two thousand six hundred fifty one
 user@machine$
 ```
-Command line use is the intended use-case.
 
-### Installation
+
+### CLI Installation
 For convenient CLI use I recommending "installing" with the following commands
 
 ```
@@ -19,13 +19,31 @@ user@machine$ sudo cp IntegerWords.py /usr/local/bin/intw
 user@machine$ sudo chmod +x /usr/local/bin/intw
 ```
 
-Installation makes casual use easy and convenient for example:
+Installation makes casual CLI use easy and convenient; For example:
 
 ```
 user@machine$ intw 331002651
 three hundred thirty one million two thousand six hundred fifty one 
 user@machine$
 
+```
+
+### Module Installation
+For convenient use in the Python interpreter (or in Python programs) I recommend "installing" with the following commands
+
+```
+user@machine$ cd IntegerWords/
+user@machine$ pip3 install .
+```
+
+Installation makes casual use in the Python interpreter easy and convenient; For example:
+
+```
+user@machine$ python3
+>>> from IntegerWords import intw
+>>> intw(677)
+six hundred seventy seven
+>>>
 ```
 
 
