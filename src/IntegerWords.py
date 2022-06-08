@@ -86,7 +86,7 @@ class EnglishInteger:
 
 
 
-
+# TODO: Move to proper unit-tests in tests/
 def debug_tests():
 
 	for i in range(100000):
@@ -102,9 +102,7 @@ def debug_tests():
 		print(str(v) + ": " + str(ei))
 
 
-
-
-if __name__ == "__main__":
+def main():
 	#debug_tests()
 	if(len(sys.argv) != 2):
 		print("Improper Usage")
@@ -114,5 +112,10 @@ if __name__ == "__main__":
 	user_input = user_input.replace(",", "")
 	num = int(user_input)
 	intw(num)
+
+
+if __name__ == "__main__":
+	main()
+
 
 
