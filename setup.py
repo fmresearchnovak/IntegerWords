@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 	long_desc = fh.read()
 
 
-setuptools.setup(name='IntegerWords-deadmund',
+setuptools.setup(name='IntegerWords',
       version='1.0',
       description='A python3 module that converts numbers to English words.  For example "5" -> "five"',
       long_description = long_desc,

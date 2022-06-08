@@ -3,18 +3,20 @@ Converts integers to English words.  For example, convert 331002651 to "three hu
 
 
 ## Installation
+IntegerWords is available in the pypi repository: [https://pypi.org/project/IntegerWords/](https://pypi.org/project/IntegerWords/).  It can be easily installed using pip.
+
 ```
-pip3 install IntegerWords-deadmund
+pip3 install IntegerWords
 ```
 
 
 #### Alternative Installation
-First install build from pip:
+First install the 'build' module from pip:
 ```
 pip3 install build
 ```
 
-Then, clone this repo, package IntegerWords manualy and install from local package.
+Then, assuming you have already cloned this repo, build IntegerWords manualy and install it from local that locally built package.
 
 ```
 user@machine:~/IntegerWords$ python3 -m build
