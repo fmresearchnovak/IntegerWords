@@ -1,5 +1,8 @@
 import setuptools
 
+# To install as a module on my system locally
+# https://gemini.google.com/app/5f4f7f7ea21184cb
+
 
 with open("README.md", "r") as fh:
 	long_desc = fh.read()

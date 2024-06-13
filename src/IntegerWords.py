@@ -3,6 +3,9 @@
 import random
 import sys
 
+# To install as a module on my system locally
+# https://gemini.google.com/app/5f4f7f7ea21184cb
+
 
 def intw(num):
     print(EnglishInteger(num))
