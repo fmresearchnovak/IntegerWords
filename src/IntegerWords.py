@@ -26,6 +26,9 @@ class EnglishInteger:
 
 
 	def setValue(self, newValue):
+		if(newValue < 0):
+			raise TypeError("Negative numbers not supported: " + str(newValue))
+
 		if(isinstance(newValue, int)):
 			self.val = newValue
 		else:
@@ -54,7 +57,7 @@ class EnglishInteger:
 
 		# hack to get rid of extra / erroneous spaces
 		ans = ans.replace("  ", " ")
-		return ans
+		return ans.strip(" ")
 
 
 	def comma_separated_chunk(self, i_chunk):
@@ -83,42 +86,5 @@ class EnglishInteger:
 		elif(len(s_chunk) == 1):
 			return self.translation[i_chunk]
 	
-
-
-
-
-
-
-# TODO: Move to proper unit-tests in tests/
-def debug_tests():
-
-	for i in range(100000):
-		ei = EnglishInteger(i)
-		#print("\n\n")
-		print(str(i) + ": " + str(ei))
-
-
-	print("-" * 20)
-	for i in range(40):
-		v = random.randint(0, 18446744073709551615)
-		ei = EnglishInteger(v)
-		print(str(v) + ": " + str(ei))
-
-
-def main():
-	#debug_tests()
-	if(len(sys.argv) != 2):
-		print("Improper Usage")
-		sys.exit(1)
-
-	user_input = sys.argv[1]
-	user_input = user_input.replace(",", "")
-	num = int(user_input)
-	intw(num)
-
-
-if __name__ == "__main__":
-	main()
-
 
 
