@@ -1,7 +1,7 @@
 
 import sys
 
-from IntegerWords import EnglishInteger
+from .IntegerWords import EnglishInteger
 
 def main():
 	if(len(sys.argv) != 2):
