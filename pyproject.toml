@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "IntegerWords"
-version = "1.1"
+version = "1.0.1"
 description = "A python3 module that converts numbers to English words.  For example 52 -> 'fifty two'."
 readme = "README.md"
 license = {text = "GPL-3.0"}
@@ -14,7 +14,7 @@ authors = [
     { name='Ed Novak', email="enovak@fandm.edu"},
 ]
 requires-python = ">=3.0"
-dependences = []
+dependencies = []
 
 
 [project.urls]
@@ -23,4 +23,4 @@ Repository = "https://github.com/fmresearchnovak/IntegerWords"
 
 
 [project.scripts]
-    intw = "integerwords.cli:main" # automatically creates the intw script!
+intw = "integerwords.cli:main" # automatically creates the intw script!

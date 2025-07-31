@@ -9,7 +9,7 @@ with open("README.md", "r") as fh:
 
 
 setuptools.setup(name='IntegerWords',
-      version='1.0',
+      version='1.0.1',
       description='A python3 module that converts numbers to English words.  For example "5" -> "five"',
       long_description = long_desc,
       long_description_content_type="text/markdown",
