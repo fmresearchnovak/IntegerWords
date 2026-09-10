@@ -1,0 +1,5 @@
+integerwords (1.0.1-1) UNRELEASED; urgency=medium
+
+  * This is the initial release. (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Ed Novak <enovak@fandm.edu>  Fri, 05 Dec 2025 21:10:47 -0500
