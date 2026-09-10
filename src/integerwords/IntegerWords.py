@@ -35,7 +35,7 @@ class EnglishInteger:
 			raise TypeError("Not an integer: " + str(newValue))
 
 
-	def getValue():
+	def getValue(self):
 		return self.val
 
 
